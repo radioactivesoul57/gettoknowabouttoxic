@@ -1,0 +1,347 @@
+/* Resets básicos e estilos gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(images/Imagem\ WhatsApp\ 2025-07-15\ às\ 15.37.59_b783b255.jpg);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* 1. Fixa a imagem no ecrã para não se mover com o scroll */
+    background-attachment: fixed;
+    
+    /* 2. Impede que a imagem se duplique/repita */
+    background-repeat: no-repeat;
+    
+    /* 4. Centraliza a imagem no ecrã */
+    background-position: center;
+}
+
+/* Estrutura central da página */
+.header-principal, .main-content, .footer-principal {
+    width: 100%;
+    max-width: 650px;
+}
+
+/* Cabeçalho */
+/* Banner de Perfil Estilo Discord */
+.header-principal {
+    /* Imagem / GIF de fundo */
+    background-image: url("https://static2.klipy.com/ii/4e7bea9f7a3371424e6c16ebc93252fe/65/d6/0TOk4YG143q7.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Altura do Banner (ajusta entre 180px e 240px conforme gostares mais) */
+    height: 200px;
+    width: 100%;
+
+    /* Alinha o texto do título no canto inferior esquerdo com espaçamento */
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+.header-container h1 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    -webkit-text-stroke: 1.5px #000;
+}
+
+.subtitulo {
+    color: #ffffff;
+    font-size: 14px;
+    -webkit-text-stroke: 1px #000;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    background: linear-gradient(to bottom, #14ea34, #950fd8);
+    padding: 20px;
+}
+
+h1 {
+    color: #ffffff;                 
+    -webkit-text-stroke: 1px #000;   
+    font-weight: bold;
+}
+
+.seccao {
+    margin-bottom: 25px;
+}
+
+.seccao h2 {
+    font-size: 20px;
+    color: #fafafa;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+}
+
+h2 {
+    color: #ffffff;                
+    -webkit-text-stroke: 1px #000;   
+    font-weight: bold;
+}
+
+/* Quem Sou */
+.quem-sou-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info-texto p {
+    color: white;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.info-foto img {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+
+    padding: 10px; 
+    
+    background-image: url('https://media.tenor.com/A5LOiJJhX6oAAAAj/rainbow-color-colorful.gif');
+    background-size: cover;
+    background-position: center;    
+}
+
+/* Formulário de Contacto */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+legend {
+    font-size: 13px;
+    color: #ffffff;
+    padding: 0 5px;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: flex-start;
+}
+
+.campo label {
+    width: 90px;
+    font-size: 13px;
+    padding-top: 3px;
+}
+
+.campo input, .campo textarea {
+    flex: 1;
+    border: 1px solid #999;
+    padding: 4px;
+    font-size: 13px;
+}
+
+.campo-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    background-color: #950fd8;
+    color: white;
+    border: none;
+    padding: 6px 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #410360;
+}
+
+/* Links Favoritos */
+.lista-links {
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.lista-links li {
+    margin-bottom: 4px;
+}
+
+.lista-links a {
+    color: #2e8dec;
+    text-decoration: none;
+}
+
+.lista-links a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+.footer-principal {
+    background-color: #520a76;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+input[type="file"] {
+    color: #ffffff;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+.imagem-abaixo-texto {
+    margin-top: 15px; /* Espaçamento entre o texto dos Hobbies e a imagem */
+    width: 100%;
+}
+
+.imagem-abaixo-texto img {
+    max-width: 100%;    /* Impede que a imagem ultrapasse a largura do texto */
+    height: 150px;       /* Mantém a proporção da imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Opcional: sombra leve */
+}
+
+.label-personalizada {
+    color: #ffffff; /* Troca este código hexadecimal pela cor que preferires */
+    font-weight: bold; /* Deixa o texto em negrito (opcional) */
+}
+
+/* Barra de Navegação Superior */
+.nav-bar {
+    background-color: #14ea34;
+    padding: 0 192px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+.nav-bar ul li a {
+    display: inline-block;
+    background-color: #7a0cb2;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 16px;
+    border-radius: 12px 12px 0 0;
+    font-size: 13px;
+}
+
+/* Container que junta os elementos na horizontal */
+.galeria-lado-a-lado {
+    display: flex;
+    flex-direction: row;     /* Força o alinhamento horizontal (lado a lado) */
+    justify-content: flex-start; /* Alinha à esquerda (podes usar center se preferires no meio) */
+    align-items: center;     /* Alinha verticalmente ao centro */
+    gap: 20px;               /* Espaçamento entre as duas imagens */
+    flex-wrap: wrap;         /* Permite que passem para a linha de baixo se o ecrã for muito pequeno */
+}
+
+/* Cria o layout de duas colunas: Texto à esquerda, Imagens à direita */
+.alligator-layout-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px; /* Espaço entre o texto e as imagens */
+}
+
+/* O texto ocupa o lado esquerdo de forma flexível */
+.alligator-bloco-texto {
+    flex: 1;
+}
+
+/* O bloco da direita segura as imagens */
+.alligator-bloco-imagens {
+    flex-shrink: 0;
+}
+
+/* Força as duas imagens de GIF a ficarem lado a lado na coluna da direita */
+.galeria-lado-a-lado {
+    display: flex;
+    flex-direction: row;
+    gap: 15px; /* Espaço entre os dois GIFs */
+}
+
+.pelucias img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px; /* Ajusta o tamanho da imagem conforme preferires */
+    height: auto;
+}
+
+/* Cria o layout de duas colunas: Texto à esquerda, Imagem à direita */
+.toxic-layout-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px; /* Espaço entre o texto e a imagem */
+    
+    /* ADICIONA ESTA LINHA PARA INVERTER OS LADOS: */
+    flex-direction: row-reverse; 
+}
+
+/* O texto ocupa o espaço à esquerda */
+.toxic-bloco-texto {
+    flex: 1;
+}
+
+/* O bloco da imagem fica à direita */
+.toxic-bloco-imagens {
+    flex-shrink: 0;
+}
+
+/* Define o tamanho ideal para a imagem */
+.toxic-foto img {
+    width: 250px; /* Ajusta o tamanho da imagem como preferires */
+    height: auto;
+    display: block;
+}
+
+/* Cria o layout de duas colunas: Texto à esquerda, Imagem à direita */
+.nina-layout-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px; /* Espaço entre o texto e a imagem */
+    
+}
+
+/* O texto ocupa o espaço à esquerda */
+.nina-bloco-texto {
+    flex: 1;
+}
+
+/* O bloco da imagem fica à direita */
+.nina-bloco-imagens {
+    flex-shrink: 0;
+}
+
+/* Define o tamanho ideal para a imagem */
+.nina-foto img {
+    width: 300px; /* Ajusta o tamanho da imagem como preferires */
+    height: auto;
+    display: block;
+}
